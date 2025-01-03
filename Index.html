@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Bazaar - Your Online Bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/Images/Logo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/Images/Logo.png" alt="Logo" width="45px">Book Bazaar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.marvel.com/comics" target="_blank">Marvel</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.dcuniverseinfinite.com/coming-soon/"
+                                    target="_blank">DC</a></li>
+                            <li><a class="dropdown-item" href="https://www.webnovel.com/stories/comic"
+                                    target="_blank">Manga</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://comicsadda.com/" target="_blank">Hindi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact_Us.html" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for Books" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModal">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginModalInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginModalInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginModalInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginModalInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="loginModalCheck1">
+                            <label class="form-check-label" for="loginModalCheck1">Don't ask Again</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sign-Up Modal -->
+    <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="signupModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Create an BookBazaar Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupModalInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupModalInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupModalInputPassword1" class="form-label">Create Password</label>
+                            <input type="password" class="form-control" id="signupModalInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Images/Carousel 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Images/Carousel 2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/Images/Carousel 3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Harry Potter.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a
+                                    href="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling/dp/1408855658"
+                                    target="_blank">Harry Potter and the Philosopher's Stone</a></h5>
+                            <p class="card-text">Harry Potter, an orphaned boy, discovers on his 11th birthday that
+                                he's a wizard. He attends Hogwarts School of Witchcraft and Wizardry, where he
+                                befriends Hermione Granger and Ron Weasley. Together, they uncover dark secrets
+                                about Harry’s past and confront the dark wizard Voldemort. J.K. Rowling's timeless
+                                story is filled with magic, adventure, and lessons on friendship, courage, and
+                                destiny. This enchanting tale has captured hearts worldwide, launching an iconic
+                                literary series.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Rich Dad Poor Dad.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a
+                                    href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194"
+                                    target="_blank">Rich Dad Poor Dad</a></h5>
+                            <p class="card-text">Rich Dad Poor Dad by Robert Kiyosaki contrasts the financial
+                                philosophies of two father figures: his biological father (the 'Poor Dad') and his
+                                best friend's father (the 'Rich Dad'). Through storytelling, Kiyosaki highlights the
+                                importance of financial literacy, investing, and creating passive income streams.
+                                The book stresses the need to develop a mindset focused on wealth-building, rather
+                                than relying solely on traditional education or employment. It empowers readers to
+                                think differently about money and personal finance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/Think Like A Monk.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a
+                                    href="https://www.amazon.in/Think-Like-Monk-Jay-Shetty/dp/0008386595"
+                                    target="_blank">Think Like a Monk</a></h5>
+                            <p class="card-text">Think Like a Monk by Jay Shetty offers readers valuable
+                                insights drawn from the wisdom of monks to navigate modern life. Shetty draws on
+                                his years of studying in a monastery to explain how cultivating peace,
+                                mindfulness, and discipline can help achieve clarity and inner tranquility. The
+                                book guides readers on how to detach from negativity, develop strong mental
+                                habits, and live a purposeful life. Shetty's blend of ancient wisdom and modern
+                                advice provides powerful tools for reducing stress and finding fulfillment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/War And Peace.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a
+                                    href="https://www.amazon.in/War-Peace-Vintage-Classics-Tolstoy/dp/1400079985"
+                                    target="_blank">War and Peace</a></h5>
+                            <p class="card-text">War and Peace by Leo Tolstoy is a monumental work that
+                                intricately weaves together the lives of Russian aristocratic families during
+                                the Napoleonic Wars. Through the experiences of characters the novel examines
+                                the personal and
+                                societal impacts of war, love, and loss. Tolstoy explores the philosophical
+                                nature of war and peace, and the search for meaning in life. Its sweeping narrative,
+                                profound character studies, and
+                                detailed historical context make it a timeless masterpiece of world literature.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/To Kill a Mockingbird.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a
+                                    href="https://www.amazon.in/Kill-Mockingbird-Enhanced-Harper-Lee-ebook/dp/B00K1XOV5G"
+                                    target="_blank">To Kill A Mockingbird</a></h5>
+                            <p class="card-text">To Kill a Mockingbird, by Harper Lee, is a profound exploration
+                                of racial inequality and moral courage in the American South during the 1930s.
+                                The story follows Scout Finch, a young girl, as she navigates childhood while
+                                her father, Atticus Finch, defends a black man, Tom Robinson, falsely accused of
+                                raping a white woman. The novel addresses prejudice, injustice, and empathy,
+                                with Scout’s coming-of-age narrative shedding light on the complexities of human
+                                nature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 650px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/Images/The Alchemist.jpg" class="img-fluid rounded-start" alt="image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988"
+                                    target="_blank">The Alchemist</a></h5>
+                            <p class="card-text">The Alchemist by Paulo Coelho is a philosophical novel that
+                                follows Santiago, a shepherd, on his journey to discover his Personal Legend and
+                                find a hidden treasure. Along the way, Santiago learns valuable lessons about
+                                the importance of listening to his heart, following his dreams, and
+                                understanding the interconnectedness of all things. The novel touches on themes
+                                of self-discovery, spiritual growth, and the pursuit of happiness. Coelho
+                                encourages readers to never give up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Book Bazaar, Inc</span>
+    </div>
+</footer>
+
+</html>

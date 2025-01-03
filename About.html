@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Book Bazaar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/Images/Logo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="/Images/Logo.png" alt="Logo" width="45px">Book Bazaar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.marvel.com/comics" target="_blank">Marvel</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.dcuniverseinfinite.com/coming-soon/"
+                                    target="_blank">DC</a></li>
+                            <li><a class="dropdown-item" href="https://www.webnovel.com/stories/comic"
+                                    target="_blank">Manga</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://comicsadda.com/" target="_blank">Hindi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact_Us.html" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for Books" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModal">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginModalInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginModalInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginModalInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginModalInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="loginModalCheck1">
+                            <label class="form-check-label" for="loginModalCheck1">Don't ask Again</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sign-Up Modal -->
+    <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="signupModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Create an BookBazaar Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupModalInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupModalInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupModalInputPassword1" class="form-label">Create Password</label>
+                            <input type="password" class="form-control" id="signupModalInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Welcome to Book Bazaar</h2>
+                <p class="lead">At Book Bazaar, we bring book lovers together! Explore a world of stories, knowledge,
+                    and adventure. Whether you're into thrilling mysteries, heartwarming romances, or thought-provoking
+                    non-fiction, we have something for everyone. Dive into our curated collection and let your next
+                    literary journey begin!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/Images/About - 1.jpg" alt="image"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Our Mission</h2>
+                <p class="lead">Our mission is to make books accessible and enjoyable for all. We aim to build a vibrant
+                    community of readers and writers who share a passion for literature. By promoting the love for
+                    reading, we hope to inspire minds and enrich lives one book at a time.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="/Images/About - 2.jpg" alt="image"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Why Choose Us?</h2>
+                <p class="lead">Book Bazaar is your ultimate destination for quality reads and community connections.
+                    With a user-friendly interface, regular updates, and personalized recommendations, we ensure an
+                    unmatched experience for book enthusiasts. Join us and discover why Book Bazaar is more than just a
+                    bookstore—it's a celebration of stories!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/Images/About - 3.jpg" alt="image"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Book Bazaar, Inc</span>
+    </div>
+</footer>
+
+</html>
