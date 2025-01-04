@@ -1,2 +1,3 @@
 # BookBazaar
-Online Book Store Project Website using Bootstrap
+Online Book Store Project Website using Bootstrap.
+An Online Bookstore Blog.
